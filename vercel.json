@@ -1,3 +1,9 @@
 {
+  "routes": [
+    {
+      "src": "/prod-api/(.*)",
+      "dest": "http://api.kanofans.org:8080/$1"
+    }
+  ],
   "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
