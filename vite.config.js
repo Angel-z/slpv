@@ -31,7 +31,7 @@ export default defineConfig(({ mode, command }) => {
       proxy: {
         // https://cn.vitejs.dev/config/#server-proxy
         '/dev-api': {
-          target: 'http://159.75.90.124:9000',
+          target: 'http://api.kanofans.org:9000',
           changeOrigin: true,
           rewrite: (p) => p.replace(/^\/dev-api/, '')
         }

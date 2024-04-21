@@ -3,6 +3,10 @@
     {
       "source": "/(.*)",
       "destination": "/"
+    },
+    {
+      "source": "/prod-api/:match*",
+      "destination": "http://api.kanofans.org:9000/:match*"
     }
   ]
 }
