@@ -3,10 +3,6 @@
     {
       "source": "/(.*)",
       "destination": "/"
-    },
-    {
-      "source": "/prod-api/:match*",
-      "destination": "http://159.75.90.124:9000/:match*"
     }
   ]
 }
