@@ -287,7 +287,7 @@ const subjectContentId = ref("")
 const learningStatus = ref(0)
 
 const websocket = reactive({
-  url: "ws://" + import.meta.env.VITE_APP_DOMAIN + "/websocket/subject/",
+  url: "wss://" + import.meta.env.VITE_APP_DOMAIN + "/websocket/subject/",
   rMsgList: []
 })
 
