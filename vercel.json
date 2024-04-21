@@ -6,7 +6,7 @@
     },
     {
       "source": "/prod-api/:match*",
-      "destination": "http://api.kanofans.org:8080/:match*"
+      "destination": "http://api.kanofans.org:9000/:match*"
     }
   ]
 }
