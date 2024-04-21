@@ -98,7 +98,7 @@ const groupName = ref("")
 const memberSwitch = ref(false)
 
 const websocket = reactive({
-  url: "ws://" + import.meta.env.VITE_APP_DOMAIN + "/websocket/group/",
+  url: "wss://" + import.meta.env.VITE_APP_DOMAIN + "/websocket/group/",
   rMsgList: [],
   newMessage: "",
   members: [],
