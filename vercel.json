@@ -1,18 +1,18 @@
 {
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/"
-    },
-    {
-      "source": "/prod-api/(.*)",
-      "destination": "http://api.kanofans.org:8080/$1",
+      "src": "/prod-api/(.*)",
       "headers": {
         "Host": "$http_host",
         "X-Real-IP": "$remote_addr",
         "REMOTE-HOST": "$remote_addr",
         "X-Forwarded-For": "$proxy_add_x_forwarded_for"
-      }
+      },
+      "dest": "http://api.kanofans.org:8080/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/"
     }
   ]
 }
