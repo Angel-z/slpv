@@ -34,6 +34,11 @@ export default defineConfig(({ mode, command }) => {
           target: 'http://159.75.90.124:9000',
           changeOrigin: true,
           rewrite: (p) => p.replace(/^\/dev-api/, '')
+        },
+        '/pro-api': {
+          target: 'http://159.75.90.124:9000',
+          changeOrigin: true,
+          rewrite: (p) => p.replace(/^\/pro-api/, '')
         }
       }
     },
