@@ -510,6 +510,7 @@ function editContent() {
       })
     } else {
       let req = {
+        subjectId: subjectId.value,
         contentId: subjectContentId.value,
         content: subjectContent.value
       }

@@ -34,9 +34,9 @@
                   <promotion />
                 </el-icon>
                 <el-link
-                    href="http://slp.kanofans.org"
+                    href="https://slp.kanofans.org"
                     target="_blank"
-                >http://slp.kanofans.org
+                >https://slp.kanofans.org
                 </el-link
                 >
               </p>
